@@ -13,7 +13,7 @@ from dotenv import load_dotenv
 # 加载环境变量
 load_dotenv()
 
-app = FastAPI(root_path=os.getenv("ROOT_PATH",""))
+app = FastAPI()
 
 # 获取环境变量，设置默认值
 PORT = int(os.getenv("PORT", 3000))
